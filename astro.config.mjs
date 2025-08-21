@@ -1,6 +1,9 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import react from "@astrojs/react";
+import svelte from "@astrojs/svelte";
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,5 +25,8 @@ export default defineConfig({
 				},
 			],
 		}),
+		react(),
+		svelte(),
+		vue(),
 	],
 });
